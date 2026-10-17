@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FinTrack Pro — Controle de Despesas e Orçamento (SQLite)</title>
+  <title>FinTrack Pro — @Doutrinador08</title>
+  <link rel="icon" type="image/png" href="avatar.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <!-- SQLite WebAssembly (sql.js) & Chart.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
@@ -17,9 +18,12 @@
     <!-- Barra Lateral -->
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand-icon">₿</div>
+        <div class="brand-avatar-wrap">
+          <img src="avatar.png" alt="Doutrinador08" class="brand-avatar" />
+        </div>
         <div class="brand-text">
           <h1>FinTrack Pro</h1>
+          <a href="https://github.com/Doutrinador08" target="_blank" rel="noopener" class="brand-user-tag">🎩 @Doutrinador08</a>
           <span id="dbModeLabel"><span class="db-status-dot"></span> Inicializando SQLite...</span>
         </div>
       </div>
@@ -43,6 +47,13 @@
       </nav>
 
       <div class="sidebar-footer">
+        <div class="sidebar-profile-card">
+          <img src="avatar.png" alt="Avatar" />
+          <div style="font-size:0.76rem;line-height:1.3">
+            <div style="font-weight:700;color:var(--text-primary)">Edição Especial</div>
+            <div style="color:var(--accent-primary)">Emerald & Violet</div>
+          </div>
+        </div>
         <button class="btn btn-secondary" id="themeToggleBtn" style="width:100%">☀️ Modo Claro</button>
       </div>
     </aside>

@@ -410,8 +410,8 @@ function renderCharts() {
   }
 
   const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-  const textColor = isLight ? '#475569' : '#94a3b8';
-  const gridColor = isLight ? 'rgba(15, 23, 42, 0.08)' : 'rgba(148, 163, 184, 0.12)';
+  const textColor = isLight ? '#5b21b6' : '#c4b5fd';
+  const gridColor = isLight ? 'rgba(88, 28, 135, 0.08)' : 'rgba(168, 85, 247, 0.14)';
 
   if (typeof window.Chart !== 'undefined') {
     const ctxCat = document.getElementById('categoryChartCanvas').getContext('2d');
@@ -439,7 +439,7 @@ function renderCharts() {
             data: catValues,
             backgroundColor: catColors,
             borderWidth: 2,
-            borderColor: isLight ? '#ffffff' : '#1e293b'
+            borderColor: isLight ? '#ffffff' : '#140924'
           }]
         },
         options: {
@@ -477,13 +477,13 @@ function renderCharts() {
           {
             label: 'Receitas',
             data: monthIncomes,
-            backgroundColor: '#10b981',
+            backgroundColor: '#10e862',
             borderRadius: 6
           },
           {
             label: 'Despesas',
             data: monthExpenses,
-            backgroundColor: '#ef4444',
+            backgroundColor: '#a855f7',
             borderRadius: 6
           }
         ]
