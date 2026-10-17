@@ -114,39 +114,26 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.brand-avatar-wrap {
-  position: relative;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  padding: 2px;
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
   background: linear-gradient(135deg, #10e862, #a855f7);
-  box-shadow: 0 0 16px rgba(16, 232, 98, 0.45), 0 0 24px rgba(168, 85, 247, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b0514;
+  font-size: 1.25rem;
+  font-weight: 800;
   flex-shrink: 0;
-}
-
-.brand-avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  border: 2px solid var(--bg-secondary);
+  box-shadow: 0 4px 14px rgba(16, 232, 98, 0.35);
 }
 
 .brand-text h1 {
   font-size: 1.12rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(90deg, #10e862, #c084fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-[data-theme="light"] .brand-text h1 {
-  background: linear-gradient(90deg, #15803d, #7e22ce);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .brand-user-tag {
